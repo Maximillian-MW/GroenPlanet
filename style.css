@@ -1,0 +1,800 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+@font-face {
+    font-family: Montserrat;
+    src: url(fonts/Montserrat-VariableFont_wght.ttf) format("truetype-variations");
+}
+body{
+    background-color:#f5eee6; 
+    font-family: Montserrat;
+  font-weight: 500;
+  line-height: 1.6;
+}
+a{
+    text-decoration: none;
+}
+/*Header*/
+.logo-group {
+    border: 3px solid #f5eee6;
+    border-radius: 1em;
+    padding: 0.8em;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    gap: 0.5em;
+    }
+
+.logo {
+    border: none;
+    padding: 0;
+}
+.nav-links{
+    border-radius: 0.8em;
+    display: flex;
+    width: 97%;
+    align-items: center;
+    justify-content: space-between;
+    background: rgb(93, 158, 93);
+    padding: 1em 5em;
+    margin: 0 auto;
+
+}
+
+.link a{
+    font-size: 5vh;
+    color: #f5eee6;
+}
+.logo-group {
+    display: flex;
+    align-items: center;
+    gap: 0;
+}
+.logo-text {
+    font-size: 5vh;
+    color: #f5eee6;
+}
+
+/*Hero*/
+.hero{ 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 70vh;
+    border-radius: 0.8em;
+    background-color: #d3d3d3;
+    background-image: url(img/Ocean-plastic-waste.jpg);
+    background-blend-mode: multiply;
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    color: white;
+    width: 97%;
+    margin: 0 auto;
+   
+}
+
+.hero h1 { 
+    height: 50px;
+    margin-bottom: 1.5rem;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 4rem;
+    font-weight: 600;
+   text-shadow: 2px 2px 4px black;
+}
+.hero p{
+    font-size: 3vh; 
+    text-shadow: 10px 10px 15px rgb(0, 0, 0);
+    padding: 1.5em;
+    background: rgba(0, 0, 0, 0.4);
+    color: white;
+}
+
+.hero-button button {
+    background: #212121;
+    opacity: 85%;
+    padding: 1rem 2.5rem;
+    border-radius: 0.4em;
+    display: inline-block;
+    transition: 0.3s ease-in; 
+    color: #f5eee6; 
+    font-size: 3vh;
+}
+.hero-button button:hover{
+    
+    background-color: #7b7b7b;
+    box-shadow: 2px;
+}
+
+/*Features*/
+.features {
+    width: 97%;
+    padding: 0 2rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+    border-radius: 0.8em;
+     margin: 0 auto;
+}
+
+.feature-card {
+    background:#e9e0d4;
+    border-radius: 0.8em;
+    padding: 1em;
+    
+}
+
+.feature-image-left {
+
+    height: 220px;
+    margin-bottom: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0.8em;
+    background-image: url(img/turtleplastic.jpg);
+    background-blend-mode: multiply;
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    color: white;
+    transition: 0.3s ease-in;
+}
+.feature-image-left:hover{
+    opacity: 65%;
+    background-color: #b2b2b2;
+    transform: scale(1.02);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.feature-image-center {
+    height: 220px;
+    margin-bottom: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0.8em;
+    background-image: url(img/ReducePlasticWaste.jpg);
+    background-blend-mode: multiply;
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    color: white;
+    transition: 0.3s ease-in;
+}
+.feature-image-center:hover{
+    opacity: 65%;
+    background-color: #b2b2b2;
+    transform: scale(1.02);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.feature-image-right {
+    height: 220px;
+    margin-bottom: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0.8em;
+    background-image: url(img/OceanCleanup.jpg);
+    background-blend-mode: multiply;
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    color: white;
+    transition: 0.3s ease-in;
+}
+.feature-image-right:hover{
+    opacity: 65%;
+    background-color: #b2b2b2;
+    transform: scale(1.02);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.feature-description p{
+    font-size: 2vh;
+}
+
+.feature-title h2{
+    
+    font-size: 2em;
+    border-radius: 0.3em;
+    margin-bottom: 0.75rem;
+    width: fit-content;
+}
+
+.feature-description {
+    margin:0 auto;
+    border-radius: 0.3em;
+    width: fit-content;
+
+}
+
+
+/*cta- kontakt os del*/
+
+.cta-section {
+    max-width: 1200px;
+    margin: 4rem auto;
+    padding: 1em 2rem;
+    background: #e9e0d4;
+    border-radius: 0.8em;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 2rem;
+}
+
+.cta-text {
+    height: fit-content;
+    width: 100%;
+}
+.cta-text h3{
+font-size: 1.5em;
+}
+.cta-text p{
+    width: auto;
+}
+
+.cta-action {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.cta-action button{
+    background: #212121;
+    opacity: 85%;
+    padding: 1rem 2.5rem;
+    border-radius: 0.4em;
+    transition: 0.3s ease-in; 
+    color: #f5eee6; 
+    font-size: 3vh;
+}
+.cta-action button:hover{ 
+    background-color: #7b7b7b;
+}
+
+/*Footer del*/
+footer {
+    background: rgb(93, 158, 93);
+    padding: 2rem;
+    margin-top: 4rem;
+}
+
+.footer-content {
+    max-width: 1350px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.social-links {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+.social-links h4{
+    color: #f5eee6;
+    font-weight: 600;
+}
+
+.social-icon {
+    width: 40px;
+    height: 40px;
+    background: #f5eee6;
+    border-radius: 50%;
+    transition: 0.3s ease-in;
+}
+.social-icon:hover{
+    transform: scale(1.02);
+}
+.footer-text p{
+    color: #f5eee6;
+}
+
+
+/*--------------------------Kontakt os-------------------------*/
+
+.forms { 
+    background: #e9e0d4; 
+    grid-column: 1 / 5;
+     grid-row: 6/10; 
+     width: fit-content;
+     margin: 0 auto;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     border-radius: 0.8em;
+     padding: 1em;
+     margin-top: 1em;
+}
+form div, .forms h2{
+  display: flex;
+  flex-direction: column;
+  color: #000;
+
+}
+.forms h2 {
+  font-size: 2vw;
+}
+
+form p {
+  margin: 0 0 0.3em 0; /* tekst tæt på input */
+}
+#name, #email, #Emne {
+  width: 25vw;
+  height: 2.2em;
+  border-radius: 0.2em;
+}
+#emne option{
+  color: black;
+
+}
+#bio {
+  width: 50vw;
+  height: 30vh;
+  border-radius: 0.2em;
+}
+/* Knap-container */
+.btns {
+  display: flex;
+  flex-direction: row;
+  width: 5vw;
+  gap: 1em;
+}
+button {
+  padding: 0.6em 1.4em;
+  border: none;
+  border-radius: 0.5em;
+  background: rgb(93, 158, 93);
+  color: white;
+  font-size: 1em;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.25s;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.18);
+  margin-right: 0.6rem;
+  margin-top: 1em;
+}
+
+button:hover {
+  filter: brightness(1.12);
+}
+
+button:focus {
+  outline: 3px solid #ffffff;
+  outline-offset: 2px;
+}
+
+/*-------------------------------VORES MÅL---------------------------------------*/
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.section {
+    margin-top: 2em;
+    background: #e9e0d4;
+    border-radius: 0.8em;
+    padding: 2rem;
+    margin-bottom: 2rem;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 2rem;
+}
+
+.image-box {
+    border-radius: 12px;
+    height: 280px;
+    width: 100%;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.title h2{
+   font-size: 2vw;
+}
+
+
+/* Reverse layout for alternating sections */
+.section.reverse {
+    direction: rtl;
+}
+
+.section.reverse .content {
+    direction: ltr;
+}
+
+/*Media Query*/
+
+@media (max-width: 1024px) and (min-width: 768px) {
+    
+    /* Navigation */
+    .nav-links {
+        padding: 1em 1.5em;
+        width: 95%;
+        display: grid;
+        grid-template-columns: auto 1fr 1fr 1fr;
+        gap: 1rem;
+        align-items: center;
+    }
+    
+    .logo-group {
+        padding: 0.5em;
+        grid-column: 1;
+    }
+    
+    .link {
+        text-align: center;
+    }
+    
+    .link a {
+        font-size: 2.2vh;
+    }
+    
+    .logo-text {
+        font-size: 2.2vh;
+    }
+    
+    .logo-group img {
+        width: 40px;
+        height: auto;
+    }
+
+    
+    /* Hero Section */
+     .hero {
+        height: auto;
+        min-height: 60vh;
+        width: 95%;
+        padding: 3rem 1.5rem;
+    }
+    
+    .hero h1 {
+        font-size: 3rem;
+        height: auto;
+        margin-bottom: 1rem;
+        line-height: 1.2;
+    }
+    
+    .hero p {
+        font-size: 2vh;
+        padding: 1.2em;
+        line-height: 1.5;
+        max-width: 90%;
+        margin: 0 auto;
+    }
+    
+    .hero-button {
+        margin-top: 1rem;
+    }
+    
+    .hero-button button {
+        font-size: 2.2vh;
+        padding: 0.8rem 2rem;
+    }
+
+    
+    /* Features */
+    .features {
+        width: 95%;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 1.5rem;
+        padding: 0 1.5rem;
+    }
+    
+    .feature-card {
+        padding: 0.8em;
+    }
+    
+    .feature-image-left,
+    .feature-image-center,
+    .feature-image-right {
+        height: 200px;
+    }
+    
+    .feature-title h2 {
+        font-size: 1.8em;
+    }
+    
+    .feature-description p {
+        font-size: 1.8vh;
+    }
+    
+    /* CTA Section */
+    .cta-section {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+        padding: 1.5em 1.5rem;
+        max-width: 95%;
+    }
+    
+    .cta-text h3 {
+        font-size: 1.3em;
+    }
+    
+    .cta-action {
+        justify-content: flex-start;
+    }
+    
+    .cta-action button {
+        font-size: 2.5vh;
+        padding: 0.8rem 2rem;
+    }
+    
+    /* Footer */
+    footer {
+        padding: 1.5rem;
+    }
+    
+    .footer-content {
+        flex-direction: column;
+        gap: 1.5rem;
+        text-align: center;
+    }
+    
+    .social-links {
+        flex-direction: row;
+        justify-content: center;
+    }
+    
+    /* Forms (Kontakt os page) */
+    .forms {
+        width: 90%;
+        padding: 1.5em;
+    }
+    
+    .forms h2 {
+        font-size: 3vw;
+    }
+    
+    #name, #email, #Emne {
+        width: 35vw;
+    }
+    
+    #bio {
+        width: 70vw;
+        height: 25vh;
+    }
+    
+    button {
+        font-size: 0.9em;
+        padding: 0.5em 1.2em;
+    }
+    
+    /* Vores Mål page */
+    .container {
+        max-width: 95%;
+    }
+    
+    .section {
+        grid-template-columns: 1fr 1.5fr;
+        gap: 1.5rem;
+        padding: 1.5rem;
+    }
+    
+    .image-box {
+        height: 250px;
+        width: 100%;
+        background-size: cover;
+        background-position: center;
+        object-fit: cover;
+    }
+    
+    .title h2 {
+        font-size: 3vw;
+    }
+    
+    .content p {
+        font-size: 1.8vw;
+    }
+}
+
+/* Mobile Media Query (below 768px) */
+@media (max-width: 767px) {
+    
+    /* Navigation */
+    .nav-links {
+        flex-direction: column;
+        padding: 1em;
+        gap: 0.8em;
+        width: 95%;
+        align-items: center;
+    }
+    
+    .logo-group {
+        padding: 0.4em;
+        order: -1;
+    }
+    
+    .logo-group img {
+        width: 30px;
+        height: auto;
+    }
+    
+    .link a {
+        font-size: 2.5vh;
+    }
+    
+    .logo-text {
+        font-size: 2.5vh;
+    }
+
+    
+    
+    /* Hero Section */
+    .hero {
+        height: auto;
+        min-height: 50vh;
+        width: 95%;
+        padding: 2rem 1rem;
+    }
+    
+    .hero h1 {
+        font-size: 1.8rem;
+        height: auto;
+        margin-bottom: 0.8rem;
+        line-height: 1.2;
+    }
+    
+    .hero p {
+        font-size: 1.6vh;
+        padding: 1em;
+        line-height: 1.4;
+        max-width: 95%;
+        margin: 0 auto;
+    }
+    
+    .hero-button {
+        margin-top: 1rem;
+    }
+    
+    .hero-button button {
+        font-size: 1.8vh;
+        padding: 0.7rem 1.5rem;
+    }
+
+    
+    /* Features */
+    .features {
+        width: 95%;
+        grid-template-columns: 1fr;
+        gap: 1rem;
+        padding: 0 1rem;
+    }
+    
+    .feature-card {
+        padding: 0.8em;
+    }
+    
+    .feature-image-left,
+    .feature-image-center,
+    .feature-image-right {
+        height: 180px;
+    }
+    
+    .feature-title h2 {
+        font-size: 1.5em;
+    }
+    
+    .feature-description p {
+        font-size: 1.6vh;
+    }
+    
+    /* CTA Section */
+    .cta-section {
+        grid-template-columns: 1fr;
+        padding: 1em;
+        margin: 2rem auto;
+        max-width: 95%;
+    }
+    
+    .cta-text h3 {
+        font-size: 1.2em;
+    }
+    
+    .cta-text p {
+        font-size: 0.9em;
+    }
+    
+    .cta-action button {
+        font-size: 2vh;
+        padding: 0.7rem 1.8rem;
+    }
+    
+    /* Footer */
+    footer {
+        padding: 1rem;
+        margin-top: 2rem;
+    }
+    
+    .footer-content {
+        flex-direction: column;
+        gap: 1rem;
+    }
+    
+    .social-links {
+        flex-direction: column;
+        gap: 0.8rem;
+    }
+    
+    .social-icon {
+        width: 35px;
+        height: 35px;
+    }
+    
+    .footer-text p {
+        font-size: 0.9em;
+    }
+    
+    /* Forms (Kontakt os page) */
+    .forms {
+        width: 95%;
+        padding: 1em;
+    }
+    
+    .forms h2 {
+        font-size: 5vw;
+    }
+    
+    #name, #email, #Emne {
+        width: 70vw;
+    }
+    
+    #bio {
+        width: 85vw;
+        height: 20vh;
+    }
+    
+    .btns {
+        width: auto;
+        flex-direction: column;
+        align-items: stretch;
+    }
+    
+    button {
+        font-size: 0.85em;
+        padding: 0.5em 1em;
+        margin-right: 0;
+    }
+    
+    /* Vores Mål page */
+    .container {
+        max-width: 95%;
+        padding: 0 0.5rem;
+    }
+    
+    .section {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+        padding: 1rem;
+        margin-bottom: 1.5rem;
+    }
+    
+    .section.reverse {
+        direction: ltr;
+    }
+    
+    .image-box {
+        height: 200px;
+    }
+    
+    .title h2 {
+        font-size: 5vw;
+    }
+    
+    .content {
+        gap: 1rem;
+    }
+}

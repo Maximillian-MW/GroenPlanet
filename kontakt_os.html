@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+
+    <title>Grøn Hverdag</title>
+</head>
+<body class="om_os">
+    <br>
+     <header>
+    <nav class="nav-bar">
+        <div class="nav-links">
+            <div class="logo-group">
+                <div class="logo-text">Grøn</div>
+                <img class="logolink" src="img\GreenEarth.png" alt="Sidens logo der skal forestille vores glade planet" aria-hidden="true">
+                <div class="logo-text">Planet</div>
+            </div>
+            
+            <div class="link"><a href="index.html">Forside</a></div>
+            <div class="link"><a href="vores_mål.html">Vores mål</a></div>
+            <div class="link"><a href="kontakt_os.html">Kontakt os</a></div>
+        </div>
+    </nav>
+</header>
+
+    <div class="forms" role="region" aria-label="Kort over Organisationens adresse">
+          <section class="forms" tabindex="0" role="region" aria-label="Kortvisning fra OpenStreetMap">
+                    <form action="">
+                      <h2>Skriv til os</h2>
+
+                      <div class="form-group">
+                        <label for="name">Navn</label>
+                        <input type="text" name="name" id="name" placeholder="Skriv dit navn" required>
+                      </div>
+
+                      <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" name="email" id="email" placeholder="Skriv din email" required>
+                      </div>
+                      <div class="form-group">
+                                <label for="emne">Emne</label>
+                                <select name="emne" id="emne" required>
+                                  <option value="disabled selected hidden">Vælg et emne...</option>
+                                  <option value="Generel forespørgsel">Generel forespørgsel</option>
+                                  <option value="Farveblindhed / Tilgængelighed">Farveblindhed / Tilgængelighed</option>
+                                  <option value="Fejl på hjemmesiden">Fejl på hjemmesiden</option>
+                                  <option value="Samarbejde / Partnerskab">Samarbejde / Partnerskab</option>
+                                  <option value="Pressehenvendelse">Pressehenvendelse</option>
+                                  <option value="Feedback / Forslag">Feedback / Forslag</option>
+                                  <option value="Andet">Andet (skriv i feltet herunder)</option>
+                                </select>
+
+                      </div>
+                      <div class="form-group">
+                        <label for="bio">Besked</label>
+                        <textarea name="bio" id="bio" placeholder="Skriv din besked her..." rows="6"></textarea>
+                      </div>
+
+                      <div class="btns">
+                        <button type="reset">Reset</button>
+                        <button type="submit">Send</button>
+                      </div>
+                </form>
+          </section>
+        </div>
+
+        <footer>
+        <div class="footer-content">
+            <div class="social-links"><h4>Vores SoMe:</h4>
+                <div class="social-icon"><img class="social-icon logo" src="img\facebooklogo.png" alt=""></div>
+                <div class="social-icon"><img class="social-icon logo" src="img/instalogo.png" alt=""></div>
+                <div class="social-icon"><img class="social-icon logo" src="img/xtwitterlogo.png" alt=""></div>
+            </div>
+            <div class="footer-text"><p><i>Vi beskytter naturen og reducerer plastikforurening — vær med.</i></p></div>
+        </div>
+    </footer>
+</body>
+</html>
