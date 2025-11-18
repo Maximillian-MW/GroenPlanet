@@ -7,10 +7,10 @@
 
     <title>Grøn Hverdag</title>
 </head>
-<body class="om_os">
+<body class="kontakt_os">
     <br>
-     <header>
-    <nav class="nav-bar">
+     <header role="banner">
+    <nav class="nav-bar" role="navigation" aria-label="Hovednavigation">
         <div class="nav-links">
             <div class="logo-group">
                 <div class="logo-text">Grøn</div>
@@ -18,30 +18,30 @@
                 <div class="logo-text">Planet</div>
             </div>
             
-            <div class="link"><a href="index.html">Forside</a></div>
-            <div class="link"><a href="vores_mål.html">Vores mål</a></div>
-            <div class="link"><a href="kontakt_os.html">Kontakt os</a></div>
+            <div class="link"><a href="index.html" tabindex="0" role="link">Forside</a></div>
+            <div class="link"><a href="vores_mål.html" tabindex="0" role="link">Vores mål</a></div>
+            <div class="link"><a href="kontakt_os.html" tabindex="0" role="link">Kontakt os</a></div>
         </div>
     </nav>
 </header>
 
     <div class="forms" role="region" aria-label="Kort over Organisationens adresse">
           <section class="forms" tabindex="0" role="region" aria-label="Kortvisning fra OpenStreetMap">
-                    <form action="">
-                      <h2>Skriv til os</h2>
+                    <form action="" role="form" aria-label="Kontaktformular">
+                      <h2 tabindex="0">Skriv til os</h2>
 
                       <div class="form-group">
                         <label for="name">Navn</label>
-                        <input type="text" name="name" id="name" placeholder="Skriv dit navn" required>
+                        <input type="text" name="name" id="name" placeholder="Skriv dit navn" required tabindex="0" aria-required="true">
                       </div>
 
                       <div class="form-group">
                         <label for="email">Email</label>
-                        <input type="email" name="email" id="email" placeholder="Skriv din email" required>
+                        <input type="email" name="email" id="email" placeholder="Skriv din email" required tabindex="0" aria-required="true">
                       </div>
                       <div class="form-group">
                                 <label for="emne">Emne</label>
-                                <select name="emne" id="emne" required>
+                                <select name="emne" id="emne" required tabindex="0" aria-required="true">
                                   <option value="disabled selected hidden">Vælg et emne...</option>
                                   <option value="Generel forespørgsel">Generel forespørgsel</option>
                                   <option value="Farveblindhed / Tilgængelighed">Farveblindhed / Tilgængelighed</option>
@@ -55,25 +55,25 @@
                       </div>
                       <div class="form-group">
                         <label for="bio">Besked</label>
-                        <textarea name="bio" id="bio" placeholder="Skriv din besked her..." rows="6"></textarea>
+                        <textarea name="bio" id="bio" placeholder="Skriv din besked her..." rows="6" tabindex="0"></textarea>
                       </div>
 
                       <div class="btns">
-                        <button type="reset">Reset</button>
-                        <button type="submit">Send</button>
+                        <button type="reset" tabindex="0" role="button" aria-label="Nulstil formular">Reset</button>
+                        <button type="submit" tabindex="0" role="button" aria-label="Send formular">Send</button>
                       </div>
                 </form>
           </section>
         </div>
 
-        <footer>
+        <footer role="contentinfo">
         <div class="footer-content">
-            <div class="social-links"><h4>Vores SoMe:</h4>
-                <div class="social-icon"><img class="social-icon logo" src="img\facebooklogo.png" alt=""></div>
-                <div class="social-icon"><img class="social-icon logo" src="img/instalogo.png" alt=""></div>
-                <div class="social-icon"><img class="social-icon logo" src="img/xtwitterlogo.png" alt=""></div>
+            <div class="social-links" aria-label="Sociale medier links"><h4 tabindex="0">Vores SoMe:</h4>
+                <div class="social-icon"><img class="social-icon logo" src="img\facebooklogo.png" alt="Facebook logo"></div>
+                <div class="social-icon"><img class="social-icon logo" src="img/instalogo.png" alt="Instagram logo"></div>
+                <div class="social-icon"><img class="social-icon logo" src="img/xtwitterlogo.png" alt="Twitter logo"></div>
             </div>
-            <div class="footer-text"><p><i>Vi beskytter naturen og reducerer plastikforurening — vær med.</i></p></div>
+            <div class="footer-text"><p tabindex="0"><i>Vi beskytter naturen og reducerer plastikforurening — vær med.</i></p></div>
         </div>
     </footer>
 </body>

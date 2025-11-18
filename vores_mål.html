@@ -9,8 +9,8 @@
 </head>
 <body class="vores_mål">
     <br>
-     <header>
-    <nav class="nav-bar">
+     <header role="banner">
+    <nav class="nav-bar" role="navigation" aria-label="Hovednavigation">
         <div class="nav-links">
             <div class="logo-group">
                 <div class="logo-text">Grøn</div>
@@ -18,31 +18,35 @@
                 <div class="logo-text">Planet</div>
             </div>
             
-            <div class="link"><a href="index.html">Forside</a></div>
-            <div class="link"><a href="vores_mål.html">Vores mål</a></div>
-            <div class="link"><a href="kontakt_os.html">Kontakt os</a></div>
+            <div class="link"><a href="index.html" tabindex="0" role="link">Forside</a></div>
+            <div class="link"><a href="vores_mål.html" tabindex="0" role="link">Vores mål</a></div>
+            <div class="link"><a href="kontakt_os.html" tabindex="0" role="link">Kontakt os</a></div>
         </div>
     </nav>
 </header>
 
-    <div class="container">
+    <div class="container" role="main">
         <!-- Section 1 - Image Left -->
-        <div class="section">
-            <div class="image-box"><img class="image-box" src="img\ocean-surf.jpg" alt="Billede af en mand der surfer igennem en bølge fyldt med plastik og andre former for skrald"></div>
+        <div class="section" role="region" aria-label="Plastik møder havet - information">
+            <div class="image-box">
+                <img class="image-box" src="img\ocean-surf.jpg" alt="Billede af en mand der surfer igennem en bølge fyldt med plastik og andre former for skrald">
+            </div>
             <div class="content">
-                <div class="title"><h2>Når plastik møder havet</h2></div>
-                <div class="text-line"><p>Plastikforurening er en af de største trusler mod livet i havet. Millioner af tons plastik ender hvert år i oceanerne og spredes selv til de fjerneste områder. Mange havdyr forveksler plastik med føde og sluger det - ofte med dødelige konsekvenser. Skildpadder tror, plastikposer er vandmænd, fisk fyldes med mikroplast, og havfugle bygger reder af plastik uden at kende faren. <br>
+                <div class="title"><h2 tabindex="0">Når plastik møder havet</h2></div>
+                <div class="text-line"><p tabindex="0">Plastikforurening er en af de største trusler mod livet i havet. Millioner af tons plastik ender hvert år i oceanerne og spredes selv til de fjerneste områder. Mange havdyr forveksler plastik med føde og sluger det - ofte med dødelige konsekvenser. Skildpadder tror, plastikposer er vandmænd, fisk fyldes med mikroplast, og havfugle bygger reder af plastik uden at kende faren. <br>
                 Skaderne stopper ikke der. Når dyr bliver fanget i efterladte fiskenet og plastiklinjer, kæmper de sig ihjel, og mikroplast hober sig op i fødekæden og skader hele økosystemet - til sidst også os mennesker. Havet og dets dyreliv er afgørende for planetens sundhed, og de kan ikke beskytte sig selv mod vores forurening.</p></div>
                 <div class="text-line short"></div>
             </div>
         </div>
 
         <!-- Section 2 - Image Right -->
-        <div class="section reverse">
-            <div class="image-box"><img class="image-box" src="img/plastikPant.jpg" alt=""></div>
+        <div class="section reverse" role="region" aria-label="Hverdagsvaner - bæredygtighed">
+            <div class="image-box">
+                <img class="image-box" src="img/plastikPant.jpg" alt="Billede af pantflasker i sorteringscontainer">
+            </div>
             <div class="content">
-                <div class="title"><h2>Hverdagsvaner der gør en forskel</h2></div>
-                <div class="text-line"><p>Selv små ændringer i hverdagen kan have en stor betydning for miljøet. Når vi sorterer vores affald og afleverer plastik til genbrug, sørger vi for, at materialerne kan få nyt liv i stedet for at ende i naturen og havet. Én flaske virker måske ubetydelig, men millioner af mennesker, der tager det samme valg, gør en enorm forskel. <br>
+                <div class="title"><h2 tabindex="0">Hverdagsvaner der gør en forskel</h2></div>
+                <div class="text-line"><p tabindex="0">Selv små ændringer i hverdagen kan have en stor betydning for miljøet. Når vi sorterer vores affald og afleverer plastik til genbrug, sørger vi for, at materialerne kan få nyt liv i stedet for at ende i naturen og havet. Én flaske virker måske ubetydelig, men millioner af mennesker, der tager det samme valg, gør en enorm forskel. <br>
                 Bæredygtighed handler ikke om at være perfekt — men om at gøre det, vi kan, hver dag. Når vi tager ansvar i vores eget hjem, inspirerer vi også dem omkring os til at gøre det samme. <br>
                 <i>Sammen kan vi skabe en grønnere fremtid — ét skridt ad gangen.</i></p></div>
                 <div class="text-line short"></div>
@@ -50,24 +54,26 @@
         </div>
 
         <!-- Section 3 - Image Left -->
-        <div class="section">
-            <div class="image-box"><img class="image-box" src="img/plasticVolunteers.jpg" alt=""></div>
+        <div class="section" role="region" aria-label="Fællesskab og bæredygtighed">
+            <div class="image-box">
+                <img class="image-box" src="img/plasticVolunteers.jpg" alt="Frivillige der samler plastikaffald på en strand">
+            </div>
             <div class="content">
-                <div class="title"><h2>Når fællesskab bliver bæredygtighed</h2></div>
-                <div class="text-line"><p>Når vi gør en indsats sammen, kan vi virkelig mærke forskellen på miljøet. Det kan være at møde op til lokale oprydningsdage, samle affald på stranden eller i parken, eller støtte organisationer, der arbejder for en grønnere fremtid. Når flere hjælper, bliver opgaven lettere, og fællesskabet vokser. Det viser, at ansvar ikke kun ligger på den enkelte — vi kan løfte det sammen. Når vi hjælper hinanden, hjælper vi samtidig planeten. På den måde skaber vi en kultur, hvor det er helt naturligt at passe på naturen og støtte hinanden i at gøre det gode. Ingen kan gøre alt, men alle kan gøre noget — og det er præcis sådan, ændringer begynder.</p></div>
+                <div class="title"><h2 tabindex="0">Når fællesskab bliver bæredygtighed</h2></div>
+                <div class="text-line"><p tabindex="0">Når vi gør en indsats sammen, kan vi virkelig mærke forskellen på miljøet. Det kan være at møde op til lokale oprydningsdage, samle affald på stranden eller i parken, eller støtte organisationer, der arbejder for en grønnere fremtid. Når flere hjælper, bliver opgaven lettere, og fællesskabet vokser. Det viser, at ansvar ikke kun ligger på den enkelte — vi kan løfte det sammen. Når vi hjælper hinanden, hjælper vi samtidig planeten. På den måde skaber vi en kultur, hvor det er helt naturligt at passe på naturen og støtte hinanden i at gøre det gode. Ingen kan gøre alt, men alle kan gøre noget — og det er præcis sådan, ændringer begynder.</p></div>
                 <div class="text-line short"></div>
             </div>
         </div>
     </div>
 
-        <footer>
+        <footer role="contentinfo">
         <div class="footer-content">
-            <div class="social-links"><h4>Vores SoMe:</h4>
-                <div class="social-icon"><img class="social-icon logo" src="img\facebooklogo.png" alt=""></div>
-                <div class="social-icon"><img class="social-icon logo" src="img/instalogo.png" alt=""></div>
-                <div class="social-icon"><img class="social-icon logo" src="img/xtwitterlogo.png" alt=""></div>
+            <div class="social-links" aria-label="Sociale medier links"><h4 tabindex="0">Vores SoMe:</h4>
+                <div class="social-icon"><img class="social-icon logo" src="img\facebooklogo.png" alt="Facebook logo"></div>
+                <div class="social-icon"><img class="social-icon logo" src="img/instalogo.png" alt="Instagram logo"></div>
+                <div class="social-icon"><img class="social-icon logo" src="img/xtwitterlogo.png" alt="Twitter logo"></div>
             </div>
-            <div class="footer-text"><p><i>Vi beskytter naturen og reducerer plastikforurening — vær med.</i></p></div>
+            <div class="footer-text"><p tabindex="0"><i>Vi beskytter naturen og reducerer plastikforurening — vær med.</i></p></div>
         </div>
     </footer>
 </body>
